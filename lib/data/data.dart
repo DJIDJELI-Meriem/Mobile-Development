@@ -2,7 +2,8 @@
 
 
 
-import 'package:first_try_signup/UserInterface/MyHachathones/FinalCards.dart';
+import 'package:first_try_signup/AdminInterface/HachthoneInfoPage/HachthonePage.dart';
+import 'package:first_try_signup/AdminInterface/MyHachathones/FinalCards.dart';
 
 List<HackathonInfo> hackathonList = [
       HackathonInfo(

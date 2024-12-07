@@ -1,3 +1,5 @@
+import 'package:first_try_signup/AdminInterface/Notifications/notifications.dart';
+import 'package:first_try_signup/AdminInterface/Profile/profileorg.dart';
 import 'package:flutter/material.dart';
 
 
@@ -18,19 +20,28 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back , color: Colors.white),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(context); // This will navigate back to the previous page
+        },
       ),
       actions: [
         IconButton(
           icon: Icon(Icons.notifications , color: Colors.white),
           onPressed: () {
-            print('Notifications clicked');
+             Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => notificationspage()),
+    );
+            
           },
         ),
         IconButton(
           icon: Icon(Icons.person , color: Colors.white),
           onPressed: () {
-            print('Profile clicked');
+             Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Profileorg()),
+    );
           },
         ),
       ],

@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-
-import 'package:first_try_signup/UserInterface/HomePage/homepage.dart';
+import 'package:first_try_signup/AdminInterface/HomePage/homepage.dart';
 import 'package:flutter/material.dart';
 import 'login.dart';
 import 'package:first_try_signup/Style/Style_Meriem/styles.dart';
